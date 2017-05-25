@@ -169,6 +169,11 @@ return [
         Laravel\Tinker\TinkerServiceProvider::class,
 
         /*
+         * Phpstorm ide helper
+         */
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+
+        /*
          * Application Service Providers...
          */
         App\Providers\AppServiceProvider::class,
@@ -176,7 +181,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+        App\Providers\ComposerServiceProvider::class,
     ],
 
     /*

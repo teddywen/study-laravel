@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
+use Illuminate\Support\Facades\Route;
+
+Route::get('', function () {
     return view('welcome');
+});
+
+Route::group(['namespace' => 'Test'], function () {
+    Route::get('hello/show/{id}/{name}/{age}', 'HelloController@show')
+        ->where('id', '[0-9]+');
 });
