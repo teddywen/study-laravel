@@ -168,8 +168,9 @@ return [
          */
         Laravel\Tinker\TinkerServiceProvider::class,
 
-        /*
+        /**
          * Phpstorm ide helper
+         * @link https://github.com/barryvdh/laravel-ide-helper
          */
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 
